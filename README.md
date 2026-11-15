@@ -65,7 +65,7 @@ python3 -m http.server 4173                           # 打开 http://localhost:
    bbox，逐轴均匀量化会被离群点拉大步长，此时应按块/按 primitive 分别量化（本工具未做分块量化）。
 4. **示例网格是脚本生成的合成薄带**，不是真实 glTF 资产；数据格式是本仓自有的紧凑 JSON，不是 glTF 二进制。
 5. **UV 误差以 2048² 纹理换算成 texel**，不含 wrap/mirror 重复模式与 mip 级别的影响。
-6. **没有自动化浏览器测试**（按硬性约束禁用 playwright/puppeteer/chromium）；浏览器路径只验证了
+6. **没有自动化浏览器测试**（硬性约束禁止无头浏览器驱动）；浏览器路径只验证了
    `python3 -m http.server` 返回 200 + importmap 存在 + 页面与 node 共用同一 `src/core.mjs`。
 
 ## 目录
