@@ -1,0 +1,60 @@
+{
+ "node": "v24.19.0",
+ "samples": 7,
+ "mesh": {
+  "vertices": 16017,
+  "triangles": 31360
+ },
+ "cfg": {
+  "posBits": 12,
+  "nrmBits": 8,
+  "uvBits": 12,
+  "texSize": 2048,
+  "tolRelPos": 0.001,
+  "tolTexels": 0.5,
+  "tolDeg": 1
+ },
+ "coldStart": {
+  "certificateMs": 20.216975,
+  "sweepMs": 31.562345,
+  "baselineMs": 11.795264
+ },
+ "certificateMs": {
+  "min": 5.197962,
+  "median": 5.896225,
+  "p95": 6.512953,
+  "stddev": 0.5142268571329751,
+  "relStddev": 0.08821055269258427,
+  "samples": 7
+ },
+ "sphereSweep200kMs": {
+  "min": 26.103884,
+  "median": 26.162392,
+  "p95": 26.408877,
+  "stddev": 0.09156519105121176,
+  "relStddev": 0.003495161523662266,
+  "samples": 7
+ },
+ "baselineMs": {
+  "min": 4.803269,
+  "median": 4.995622,
+  "p95": 6.611438,
+  "stddev": 0.803748094459543,
+  "relStddev": 0.14389200086497297,
+  "samples": 7
+ },
+ "speedup": {
+  "certVsSweep": 4.437142748114259,
+  "certVsNaiveBaseline": 0.8472576945418466
+ },
+ "numbers": {
+  "posRelError": 0.00012210012210012936,
+  "posBound": 0.0001295700354162619,
+  "uvTexels": 0.3536397284175932,
+  "nrmMaxAngleDeg": 0.6425217071528273,
+  "nrmMeanAngleDeg": 0.2728152348839344,
+  "nrmBoundDeg": 0.9886330582649501,
+  "naivePosMaxError": 0.0004229672301755485,
+  "naiveNrmMaxAngleDeg": 0.3403266284098136
+ }
+}

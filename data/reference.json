@@ -1,0 +1,47 @@
+{
+ "node": "v24.19.0",
+ "cfg": {
+  "posBits": 12,
+  "nrmBits": 8,
+  "uvBits": 12,
+  "texSize": 2048,
+  "tolRelPos": 0.001,
+  "tolTexels": 0.5,
+  "tolDeg": 1
+ },
+ "diag": 1.061178590059185,
+ "vertices": 16017,
+ "triangles": 31360,
+ "posMaxError": 0.00012957003541626963,
+ "posRelError": 0.00012210012210012936,
+ "posBound": 0.0001295700354162619,
+ "uvTexels": 0.3536397284175932,
+ "nrmMaxAngleDeg": 0.6425217071528273,
+ "nrmMeanAngleDeg": 0.2728152348839344,
+ "nrmBoundDeg": 0.9886330582649501,
+ "naivePosMaxError": 0.0004229672301755485,
+ "naiveNrmMaxAngleDeg": 0.3403266284098136,
+ "minBits": {
+  "pos": 9,
+  "uv": 12,
+  "nrm": 8
+ },
+ "sphereSweep": {
+  "n": 200000,
+  "maxAngleDeg": 0.9355674914043209
+ },
+ "witnesses": {
+  "pos": {
+   "index": 5760,
+   "error": 0.00012957003541626963
+  },
+  "uv": {
+   "index": 7896,
+   "error": 0.00017267564864140294
+  },
+  "nrm": {
+   "index": 2047,
+   "angleDeg": 0.6425217071528273
+  }
+ }
+}

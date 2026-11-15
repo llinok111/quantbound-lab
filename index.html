@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>quantbound-lab — 顶点属性量化误差证书</title>
+<style>
+  body { margin:0; font:13px/1.5 ui-monospace,Menlo,monospace; background:#0d1117; color:#c9d1d9; }
+  #ui { position:absolute; top:0; left:0; padding:10px 12px; background:#161b22cc; border-right:1px solid #30363d; width:330px; height:100%; box-sizing:border-box; overflow:auto; }
+  h1 { font-size:14px; margin:0 0 8px; } b { color:#58a6ff; } .ok { color:#3fb950; } .bad { color:#f85149; }
+  table { border-collapse:collapse; width:100%; } td { padding:1px 4px; } td:last-child { text-align:right; }
+  input[type=range] { width:100%; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="ui">
+  <h1>quantbound-lab</h1>
+  <div>顶点属性量化误差证书 · 拖位深，右侧实时与 node 复算比对。</div>
+  <p>position bits: <b id="pb">12</b><br><input id="pos" type="range" min="4" max="16" value="12"></p>
+  <p>normal bits/axis (oct): <b id="nb">8</b><br><input id="nrm" type="range" min="3" max="14" value="8"></p>
+  <table id="tbl"></table>
+  <p id="verdict"></p>
+  <p style="color:#8b949e">热力图 = 每顶点量化误差 / bbox 对角线；同一份 <code>src/core.mjs</code> 在浏览器与 node 里跑。</p>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
