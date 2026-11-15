@@ -1,0 +1,1 @@
+| `quantbound-lab` | JavaScript | 2026-11-15 | 2026-11-15 | 0 | Vertex-attribute quantization certificate: exact worst-case + witness vertex, minimal bit depth, octahedral normals 5.21x better at equal bit budget |
